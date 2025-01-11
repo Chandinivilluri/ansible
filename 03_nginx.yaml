@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - name: Install Nginx
-    ansible.bultin.package:
+    ansible.builtin.package:
       name: nginx
       state: present
   - name: Start Nginx
-    ansible.bultin.service:
+    ansible.builtin.service:
       name: nginx
       state: started
