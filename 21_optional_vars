@@ -1,0 +1,14 @@
+- name: Filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: touch file with optional mode
+    ansible.builtin.file:
+      dest: "{{item.path}}"
+      state: touch
+      mode: "{{item.mode | default(omit) }}"
+    loop:
+    - path: /tmp/foo
+    - path: /tmp/bar
+    - path: /tmp/baz
+    - mode: "0444"
