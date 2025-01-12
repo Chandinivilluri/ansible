@@ -3,8 +3,8 @@
   connection: local
   vars: #PLAY LEVEL VARIABLES
     GREET: "FROM PLAY"
-  vars_files:
-    - vars.yaml
+  #vars_files:
+    #- vars.yaml
   vars_prompt:
     - name: GREET
       prompt: Enter the value
