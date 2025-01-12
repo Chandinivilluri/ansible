@@ -5,4 +5,3 @@
   - name: handle undefined variables
     ansible.builtin.debug:
       msg: "Hello {{person | default('Ramesh')}}"
-      msg: "Hello {{number | default(100)}}"
