@@ -14,7 +14,7 @@
       CI: Jenkins
       Cloud: AWS
       Containerization: Docker
-Tasks:
+  Tasks:
   - name: Print course informtion
     ansible.builtin.debug:
       msg: "Hello Iam learning {{course_name}},with duration:{{duration}},and the topics are:{{topics}},with:{{live}},and the tools covered are:{{tools}}"
