@@ -11,4 +11,4 @@
     - path: /tmp/foo
     - path: /tmp/bar
     - path: /tmp/baz
-    - mode: "0444"
+      mode: "0444"
